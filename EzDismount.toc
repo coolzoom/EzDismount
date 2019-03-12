@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: EzDismount
+## Notes: Dismounts you when opening Flightpath, or whenever "Cannot use while mounted" OR "Can't attack while mounted" errors appear, also drops druid shapeshifts and GhostWolf
+## Title-zhCN:|CFFFF8000辅助|R 自动下马
+## Notes-zhCN:|CFFDD66DDEzDismount|R 自动下马插件，使用一些技能的时候就能自动先下马。
+## X-Repple: 辅助
+## SavedVariables: EzDismount_Config
+EzDismount_tables.lua
+EzDismount.xml
