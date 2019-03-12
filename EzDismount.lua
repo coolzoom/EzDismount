@@ -282,8 +282,8 @@ function EzDismount_getdown(mount)
 	local moonkin     = "spell_nature_forceofnature";
    	local aqmount     = "_qirajicrystal_"
    	local aquaticform = "ability_druid_aquaticform";
-
-
+	local turtle = "turtle";
+	local tortoise = "tortoise";
    -- was this a dismount request or a shapeshift request?
    if mount then
       for i=0,15,1 do
@@ -293,7 +293,7 @@ function EzDismount_getdown(mount)
          if (currBuffTex and (not EzD_exclude(i))) then
 
             -- Mount (or level 40 pally horse) or Qiraji Mounts
-            if ((string.find(string.lower(currBuffTex), regMount) or string.find(string.lower(currBuffTex), pallyhorse)) or (string.find(string.lower(currBuffTex), aqmount))) then
+            if ((string.find(string.lower(currBuffTex), regMount) or string.find(string.lower(currBuffTex), pallyhorse)) or (string.find(string.lower(currBuffTex), aqmount)) or (string.find(string.lower(currBuffTex), turtle)) or (string.find(string.lower(currBuffTex), tortoise))) then
                if ((EzDismount_Config[EzDPlayer]["Dismount"] == "ON") or (EzDismount_Config[EzDPlayer]["Dismount"] == "TAXI")) then
                   CancelPlayerBuff(i);
                end
